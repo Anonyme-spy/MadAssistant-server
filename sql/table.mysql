@@ -1,0 +1,18 @@
+CREATE DATABASE MadAssistant;
+
+USE MadAssistant;
+
+CREATE TABLE form (
+    id int primary key auto_increment,
+    Nom VARCHAR(200) not null,
+    Email VARCHAR(200) not null,
+    Message TEXT
+);
+
+describe forms;
+
+ALTER TABLE form ADD COLUMN Sending_date date;
+
+RENAME TABLE form to forms;
+
+select * from forms;
